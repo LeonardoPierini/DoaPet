@@ -144,6 +144,19 @@ section.camp-text .container h1{
 section.camp-text .container p{
     font-weight: 500;
 }
+
+section.camp-img .container{
+    padding: 40px 2%;
+    text-align: center;
+}
+
+section.camp-img .img-pet{
+    width: 350px;
+    height: 350px;
+    background-color: red;
+    display: inline-block;
+    border: 5px solid #eb0099;
+}
  
 
 
