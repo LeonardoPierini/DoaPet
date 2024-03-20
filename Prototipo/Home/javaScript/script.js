@@ -1,7 +1,7 @@
+var adotar = document.getElementById('adotar')
 
- var adotar = document.getElementById('adotar')
 function QueroAdotar(){
-   window.location = '.../Adotar/html/adotar.html'
+   window.location = '../../Adotar/Html/adotar.html'
 }
 
 adotar.addEventListener('click', QueroAdotar)
