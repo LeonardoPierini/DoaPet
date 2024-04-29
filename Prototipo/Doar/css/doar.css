@@ -71,18 +71,68 @@ header .img-wraper img{
     right: 10px;
 }
 
+  
+.add-animal{
+    max-width: 1200px;
+    background-color: blue;
+    margin:  0 auto;
+    border-radius: 25px;
+    padding: 20px 2%;
+}
 
+.add-animal h1{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+  
+  .add-animal input{
+    width: 60%;
+    height: 6vh;
+    display: block;
+    margin: 3vh auto;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+  }
 
+  .add-animal option{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+  }
+
+  .add-animal select{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    height: 6vh;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  .add-animal button{
+    width: 25%;
+    display: block;
+    margin: 5vh auto;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 2%;
+  }
+
+  .add-animal input[type=file]{
+   position: relative;
+   left: 15%;
+    margin: 3vh auto;
+    
+  }
 
   
-/* Modificar aqui */
-  #animal-form {
-    margin-bottom: 20px;
-  }
-  
-  input, select, button {
-    margin-bottom: 10px;
-  }
   
   ul {
     list-style-type: none;

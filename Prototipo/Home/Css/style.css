@@ -173,18 +173,17 @@ section.camp-img .img-pet img{
 footer{
     background-color: rgb(83, 12, 60);
     color: rgb(99, 99, 99);
-
-}
-footer.txts{
     display: flex;
-    background-color: #3085fc;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 footer p{
-    padding: 50px;
-    display: inline-block;
-
+  padding: 2.5%;
 }
+
 
 @media  screen and (max-width: 850px){
     header .logo img{

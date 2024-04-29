@@ -31,19 +31,19 @@
     </header>
 
     <section class="add-animal">
-        <div id="animal-form">  
+        <div id="animal-form" class="animal-form">  
             <h1>Adicionar Animal</h1>
     
             <input type="text" id="nome" placeholder="Nome do Pet" required>
             <input type="number" id="idade" placeholder="Idade do Pet (em anos)" required>
-    
+            <input type="number" id="peso" placeholder="Peso do animal (em kg)">
+            
             <select id="sexo">
                 <option value="macho">Macho</option>
                 <option value="fêmea">Fêmea</option>
             </select>
     
             <input type="file" id="imagem" accept="image/*">
-            <input type="number" id="peso" placeholder="Peso do animal (em kg)">
             <button onclick="addAnimal()">Adicionar</button>
         </div><!--animal-form-->
     </section><!--add-animal-->
