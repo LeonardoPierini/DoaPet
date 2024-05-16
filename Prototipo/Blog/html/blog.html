@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>
-
     <header>
         <div class="container">
             <div class="logo">
@@ -20,17 +19,70 @@
             <div class="desktop">
                 <nav>
                     <ul>
+                        <li><a  href="../../Home/Html/index.html">Home</a></li>
+                        <li><a class="selec" href="../../Blog/html/blog.html">Blog</a></li>
+                        <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
+                        <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
+                    </ul>
+                </nav>
+            </div><!--desktop-->
+
+            <div class="mobile">
+                <nav>
+                    <ul>
                         <li><a href="../../Home/Html/index.html">Home</a></li>
                         <li><a href="../../Blog/html/blog.html">Blog</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
                         <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
                     </ul>
                 </nav>
-            </div><!--desktop-->
-            
+            </div> <!--Mobile-->
             <div class="clear"></div>
         </div><!--container-->
     </header>
+
+    <section class="camp-icon">
+        <div class="container">
+            <div class="icones">
+                <div class="icon">
+                    <img src="../../Home/img/coleira (1).png" alt="">
+                    <p>Companhia diaria não <br>custa quase nada!:)</p>
+                </div><!--icon-->
+
+                <div class="icon">
+                    <img src="../../Home/img/aperto-de-mao.png" alt="">
+                    <p>Tenha um parceiro<br>e companheiro</p>
+                </div><!--icon-->
+
+                <div class="icon">
+                    <img src="../../Home/img/casa-limpa.png" alt="">
+                    <p>De um Lar para um<br>bichinho abandonado</p>
+                </div><!--icon-->
+
+                <div class="icon">
+                    <img src="../../Home/img/coracao.png" alt="">
+                    <p>Salve uma vida<br> faça um amigo</p>
+                </div><!--icon-->
+
+                <div class="icon">
+                    <img src="../../Home/img/feliz.png" alt="">
+                    <p>Você será amado todos<br>os dias!</p>
+                </div><!--icon-->
+            </div><!--icones-->
+
+            <div class="button">
+                <input type="submit" value="Quero adotar" id="adotar">
+                <input type="submit" value="Quero DOAR" id="doar">
+            </div><!--button-->
+        </div><!--container-->
+    </section><!--camp-icon-->
+
+    <section class="camp-text">
+        <div class="container">
+            <h1>Cães e Gatos para adoção</h1>
+            <p>Deixe eles te escolherem</p>
+        </div><!--container-->
+    </section><!--camp-text-->
 
     <div class="container-2">
         <button class="prev" onclick="prevSlide()">&#10094&#10094;</button>
@@ -49,7 +101,7 @@
       <button class="next" onclick="nextSlide()">&#10095&#10095;</button>
     
     </div><!--container-->
-    <h1>TIRE ALGUMAS DUVIDAS SOBRE</h1>
+    <h1 class="duvida">TIRE ALGUMAS DUVIDAS SOBRE</h1>
 
     <section class="container">
         <div class="duvidas">
@@ -138,12 +190,37 @@
 
     <footer>
         <div class="container">
-            <div class="txts">
-                <p>leopirtini06@gmail.com</p>
-                <p>+55(18) 99723-7098</p>
-            </div><!--Txts-->
+            <div class="footer-single">
+                <div class="w33">
+                    <h2>Autor</h2>
+                    <p>Leonardo Pierini</p>
+                </div><!--w33-->
+            </div>
+
+            <div class="footer-single">
+                <div class="w33">
+                    <h2>Serviços</h2>
+                    <p>Desenvolvimento de Aplicativos</p>
+                    <p>desenvolvimentos de Websites<p>
+                    <p>Criação de Portifólios</p>
+                </div><!--w33-->
+            </div>
+
+            <div class="footer-single">
+                <div class="w33">
+                    <h2>Entre em Contato</h2>
+                    <p>leopirtini06@gmail.com</p>
+                    <p>+55(18) 99723-7098</p>
+                </div><!--w33-->
+            </div>
         </div><!--container-->
     </footer><!--footer-->
+
+    <footer class="footer-2">
+        <div class="container">
+            <h2>TODOS OS DIREIOS RESERVADOS</h2>
+        </div>
+    </footer>
     <script src="../js/blog.js"></script>
 </body>
 </html>

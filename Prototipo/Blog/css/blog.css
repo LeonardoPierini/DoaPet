@@ -1,84 +1,175 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,body{
-    height: 100%;
-    font-family: "Montserrat", sans-serif;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
 }
 
 .clear{
-    clear: both;
+  clear: both;
+}
+.w33{
+  float: left;
+  width: 33.3%;
+  display: inline-block;
 }
 
 .container{
-	max-width: 1480px;
-	width: 100%;
-	margin: 0 auto;
+max-width: 1480px;
+width: 100%;
+margin: 0 auto;
 }
 
 header{
-	padding:20px 2%;
+padding:20px 2%;
 }
 
 header .logo img{
-	float: left;
-	width: 236px;
-}
-
-header nav{
-    float: right;
-}
-
-header nav ul{
-    list-style-type: none; 
-    position: relative;
-    right: 10%;
-}
-
-header nav ul li{
-    float: left;  
-}
-
-header nav ul li a{
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-    position: relative;
-    top: 20px;
-    padding: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300;
-    color: #ea45b0;
-}
-
-header nav ul li:last-child a{
-    color: white;
-    padding: 20px;
-    background-color: #eb0099;
-    border-radius: 8px;
-}
-
-header .img-wraper{
-    float: right;
-
-}
-
-header .img-wraper img{
-    position: relative;
-    right: 10px;
+float: left;
+width: 236px;
 }
 
 
+header .desktop nav{
+  float: right;
+}
+
+header .desktop nav ul{
+  list-style-type: none; 
+  position: relative;
+  right: 10%;
+}
+
+header .desktop nav ul li{
+  float: left;  
+}
+header .desktop .selec{
+  border-bottom: 3px solid #3085fc;
+}
+
+header .desktop nav ul li a{
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+  top: 20px;
+  padding: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 300;
+  color: #ea45b0;
+}
+
+header .desktop nav ul li:last-child a{
+  color: white;
+  padding: 20px;
+  background-color: #eb0099;
+  border-radius: 8px;
+}
+
+header .mobile nav{
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2%;
+  display: none;
+}
+
+header .mobile nav ul li{
+ list-style-type: none;
+ border: 2px solid rgb(61, 61, 61);
+ margin:  1px;
+ text-align: center;
+ 
+}
+
+header .mobile nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+}
 
 
+section.camp-icon{
+  background-color:#3085fc;
+}
+
+section.camp-icon .container{
+ max-width: 830px;
+
+} 
+
+section.camp-icon .container .icones{
+  padding: 20px 2%;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+} 
+
+section.camp-icon .icon{
+  padding: 20px 0%; 
+  text-align: center;
+} 
+
+section.camp-icon .icon p{
+ color: white;
+ font-size: 13px;
+ text-align: center;
+ font-family: "Montserrat", sans-serif;;
+ margin-top: 10px;
+} 
+
+
+section.camp-icon .icon img{
+ width: 50px;
+ height: 50px;
+}
+
+section.camp-icon .button{
+  text-align: center;
+}
+
+section.camp-icon .button input{
+  width: 160px;
+  height: 60px;
+  background-color: #eb0099;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 18px;
+  border: none;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+section.camp-text{
+  background-color: #eb0099;
+  color: white;
+}
+
+section.camp-text .container{
+  max-width: 800px;
+  text-align: center;
+  padding: 30px 2%;
+}
+
+section.camp-text .container h1{
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+section.camp-text .container p{
+  font-weight: 500;
+}
 
 .gallery {
     position: relative;
     max-width: 500px;
     margin: auto;
+    margin: 5% 0;
   }
   
   .slides {
@@ -111,7 +202,6 @@ header .img-wraper img{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
     background-color: rgba(0, 0, 0, 0.213);
     padding: 20px;
   }
@@ -128,7 +218,7 @@ header .img-wraper img{
   }
 
 
-  h1{
+  h1.duvida{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.213);
     padding: 10px;
@@ -143,9 +233,10 @@ header .img-wraper img{
 
   section.container .duvida-single{
     border-radius: 25px;
-    margin-top: 20%;
-    padding: 6%;
-    background-color: gray;
+    padding: 10%;
+    background-color: #eb0099;
+    color: white;
+    margin: 10% 0;
   }
 
   section.container .img-single img{
@@ -180,68 +271,104 @@ header .img-wraper img{
 
   section.container .descricao a{
     position: relative;
-    left: 35%;
+    left: 40%;
     bottom: 5%;
-
     padding: 20px;
     font-size: 17px;
     background-color:rgba(0, 0, 255, 0.686);
     border: 3px solid #eb0099;
     color: white;
     text-decoration: none;
+    border-radius: 30px;
   }
 
-  footer{
-    background-color: rgb(83, 12, 60);
-    color: rgb(99, 99, 99);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
+   
+footer{
+  background-color: #530c3c;
+  color: rgba(255, 255, 255, 0.823);
+  display: flex;
+  text-align: center;
+  padding: 10px 0 20px 0;
+}
+
+footer h2{
+  font-weight: normal;
+  padding: 20px 0;
 }
 
 footer p{
-  padding: 2.5%;
+font-weight: lighter;
+color: rgba(255, 255, 255, 0.46);
+padding: 5px;
+}
+
+footer.footer-2{
+  background-color: #800559;
+  color: rgba(255, 255, 255, 0.823);
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer.footer-2 h2{
+  font-weight: normal;
+  font-size: 19px;
 }
 
 
-  @media screen and (max-width: 1200px) {
-    .prev{
-        position: absolute;
-        left: 15%;
-        
-      }
-      
-      .next {
-        position: absolute;
-        right: 15%;
-      }
-  }
+@media screen and (max-width: 1200px) {
+  .prev{
+      position: absolute;
+      left: 15%;
+    }
+    .next {
+      position: absolute;
+      right: 15%;
+    }
+}
 
-  @media screen and (max-width: 1000px) {
-    .prev{
-        position: absolute;
-        left: 7%;
-        
-      }
-      
-      .next {
-        position: absolute;
-        right: 7%;
-      }
-  }
-  
-  @media screen and (max-width: 700px) {
-    .prev{
-        position: absolute;
-        left: 0%;
-        
-      }
-      
-      .next {
-        position: absolute;
-        right: 0%;
-      }
-  }
 
+@media screen and (max-width: 1000px) {
+  .prev{
+      position: absolute;
+      left: 7%;  
+    }
+    .next {
+      position: absolute;
+      right: 7%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .prev{
+      position: absolute;
+      left: 0%;  
+    }
+    .next {
+      position: absolute;
+      right: 0%;
+    }
+}
+
+
+@media  screen and (max-width: 850px){
+    header .logo{
+      display: inline-block;
+    }
+    header .logo img{
+        float: none;
+        display: flex;
+    }
+    header .desktop nav{
+        display: none;
+    }
+    header .mobile nav{
+        display: block;
+    }
+    section.container .duvidas{
+      padding: 10%;
+    }
+    section.container .descricao a{
+      left: 30%;
+      bottom: 5%
+    }
+}
