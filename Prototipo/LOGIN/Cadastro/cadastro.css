@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../../Imgs/wallpaper-cadastro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  h1{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+  }
+
+  .form-container {
+    position: relative; /* Adiciona posição relativa */
+    margin: 0 auto;
+    margin-top: 5vh;
+    max-width: 650px;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  form {
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  label {
+    margin-top: 10px;
+    width: 70%;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.5s; /* Adiciona transição para todas as propriedades */
+  }
+  input[type="submit"] {
+    color: wheat;
+    width: 30%;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3085fc;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  p{
+    text-align: center;
+    color: wheat;
+    margin-top: 20px;
+  }
+  a{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #eb0099;
+    margin-bottom: 20px;
+  }
+  input[type="submit"]:hover {
+    background-color: #21a1f1;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+    border-color: #61dafb;
+    box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+    width: 75%;
+    padding: 15px;
+    margin: 15px 0;
+}

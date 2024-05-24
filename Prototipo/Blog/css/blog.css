@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html,body{
   height: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
+
+  /*CLASSES AUXILIARES*/
 .clear{
   clear: both;
 }
@@ -17,40 +18,36 @@ html,body{
   width: 33.3%;
   display: inline-block;
 }
-
 .container{
 max-width: 1480px;
 width: 100%;
 margin: 0 auto;
 }
 
+
+
+  /*ESTILIZAÇÃO DO CABEÇALHO E MENU*/
 header{
 padding:20px 2%;
 }
-
 header .logo img{
 float: left;
 width: 236px;
 }
-
-
 header .desktop nav{
   float: right;
 }
-
 header .desktop nav ul{
   list-style-type: none; 
   position: relative;
   right: 10%;
 }
-
 header .desktop nav ul li{
   float: left;  
 }
 header .desktop .selec{
   border-bottom: 3px solid #3085fc;
 }
-
 header .desktop nav ul li a{
   color: black;
   font-size: 22px;
@@ -62,14 +59,21 @@ header .desktop nav ul li a{
   font-weight: 300;
   color: #ea45b0;
 }
-
 header .desktop nav ul li:last-child a{
   color: white;
   padding: 20px;
   background-color: #eb0099;
   border-radius: 8px;
 }
-
+header .mobile > img{
+  float: right;
+  width: 40px;
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
 header .mobile nav{
   max-width: 520px;
   width: 100%;
@@ -77,42 +81,42 @@ header .mobile nav{
   padding: 2%;
   display: none;
 }
-
 header .mobile nav ul li{
  list-style-type: none;
  border: 2px solid rgb(61, 61, 61);
  margin:  1px;
  text-align: center;
- 
 }
-
 header .mobile nav ul li a{
   text-decoration: none;
   font-size: 20px;
 }
+header .mobile .selec {
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px rgb(248, 0, 174);
+}
+  
 
 
+
+
+  /*CAMPO DE ICONES E BOTÔES*/
 section.camp-icon{
   background-color:#3085fc;
 }
-
 section.camp-icon .container{
  max-width: 830px;
-
 } 
-
 section.camp-icon .container .icones{
   padding: 20px 2%;
   display: flex;
   justify-content: center;
   justify-content: space-between;
 } 
-
 section.camp-icon .icon{
   padding: 20px 0%; 
   text-align: center;
 } 
-
 section.camp-icon .icon p{
  color: white;
  font-size: 13px;
@@ -120,17 +124,13 @@ section.camp-icon .icon p{
  font-family: "Montserrat", sans-serif;;
  margin-top: 10px;
 } 
-
-
 section.camp-icon .icon img{
  width: 50px;
  height: 50px;
 }
-
 section.camp-icon .button{
   text-align: center;
 }
-
 section.camp-icon .button input{
   width: 160px;
   height: 60px;
@@ -144,48 +144,44 @@ section.camp-icon .button input{
   text-transform: uppercase;
   cursor: pointer;
 }
-
 section.camp-text{
   background-color: #eb0099;
   color: white;
 }
-
 section.camp-text .container{
   max-width: 800px;
   text-align: center;
   padding: 30px 2%;
 }
-
 section.camp-text .container h1{
   text-transform: uppercase;
   margin: 10px 0;
 }
-
 section.camp-text .container p{
   font-weight: 500;
 }
 
+
+
+
+  /*GALERIA*/
 .gallery {
     position: relative;
     max-width: 500px;
     margin: auto;
     margin: 5% 0;
   }
-  
   .slides {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     border-radius: 25px;
   }
-  
   .slides img {
     scroll-snap-align: start;
     width: 100%;
     height: auto;
-   
   }
-  
   .prev,
   .next {
     background-color: #eb0099;
@@ -196,8 +192,6 @@ section.camp-text .container p{
     z-index: 1; 
     border-radius: 20px;
   }
-
-
   .container-2{
     display: flex;
     align-items: center;
@@ -205,19 +199,17 @@ section.camp-text .container p{
     background-color: rgba(0, 0, 0, 0.213);
     padding: 20px;
   }
-  
   .prev{
     position: absolute;
     left: 25%;
-    
   }
-  
   .next {
     position: absolute;
     right: 25%;
   }
 
 
+    /*ESTILIZAÇÃO DO CAMPO DE DUVIDAS E DESCRIÇÃO*/
   h1.duvida{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.213);
@@ -225,12 +217,10 @@ section.camp-text .container p{
     color: white;
     text-shadow:  2px 2px black;
   }
-
   section.container .duvidas{
     max-width: 700px;
     margin: 10vh auto;
   }
-
   section.container .duvida-single{
     border-radius: 25px;
     padding: 10%;
@@ -238,28 +228,22 @@ section.camp-text .container p{
     color: white;
     margin: 10% 0;
   }
-
   section.container .img-single img{
     width: 100%;
     height:  50%;
     border-radius: 25px 25px 0 0 ;
   }
-
-
-
   section.container .img-single img{
     width: 100%;
     height:  50%;
     border-radius: 25px 25px 0 0 ;
   }
-
   section.container .descricao h6{
     display: inline-block;
     text-align: center;
     font-size: 17px;
     opacity: 0.7;
   }
-
   section.container .descricao p{
     padding: 20px;
     text-align: left;
@@ -268,7 +252,6 @@ section.camp-text .container p{
     font-size: 20px;
     margin-bottom: 5%;
   }
-
   section.container .descricao a{
     position: relative;
     left: 40%;
@@ -282,7 +265,10 @@ section.camp-text .container p{
     border-radius: 30px;
   }
 
-   
+
+
+
+    /*ESTILIZAÇÃO DO RODAPÉ*/
 footer{
   background-color: #530c3c;
   color: rgba(255, 255, 255, 0.823);
@@ -290,31 +276,29 @@ footer{
   text-align: center;
   padding: 10px 0 20px 0;
 }
-
 footer h2{
   font-weight: normal;
   padding: 20px 0;
 }
-
 footer p{
 font-weight: lighter;
 color: rgba(255, 255, 255, 0.46);
 padding: 5px;
 }
-
 footer.footer-2{
   background-color: #800559;
   color: rgba(255, 255, 255, 0.823);
   text-align: center;
   padding: 10px 0;
 }
-
 footer.footer-2 h2{
   font-weight: normal;
   font-size: 19px;
 }
 
 
+
+  /*DESIGN RESPONSIVO*/
 @media screen and (max-width: 1200px) {
   .prev{
       position: absolute;
@@ -325,7 +309,6 @@ footer.footer-2 h2{
       right: 15%;
     }
 }
-
 
 @media screen and (max-width: 1000px) {
   .prev{
@@ -349,7 +332,6 @@ footer.footer-2 h2{
     }
 }
 
-
 @media  screen and (max-width: 850px){
     header .logo{
       display: inline-block;
@@ -362,7 +344,7 @@ footer.footer-2 h2{
         display: none;
     }
     header .mobile nav{
-        display: block;
+        display: none;
     }
     section.container .duvidas{
       padding: 10%;
@@ -371,4 +353,7 @@ footer.footer-2 h2{
       left: 30%;
       bottom: 5%
     }
+    header .mobile img{
+      display: block;
+  }
 }
