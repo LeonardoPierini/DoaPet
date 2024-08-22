@@ -193,6 +193,63 @@ section.camp-img .img-pet img{
 
 
 
+ /*Line division*/
+.line-div{
+    background-color:#ccc ;
+    padding: 5% 2%;
+    text-align: center;
+}
+.line-div .line1,.line2{
+    width: 40%;
+    height: 6px;
+    background-color: #eb0099;
+    display: inline-block;
+    border-radius: 20px;
+}
+.line-div h2{
+    display: inline-block;
+    background-color: #ccc;
+    margin: 0 2%;
+    
+}
+
+
+    /*Banner*/
+    section.baner{
+        height: 100%;
+    }
+    section.baner > .black{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.434);
+        position: absolute;
+        z-index: 111;
+    }
+    section.baner img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    section.baner > .baner-wraper{
+       display: inline-block;
+       position: relative;
+       top:-40%;
+       left:50%;
+       transform: translate(-50%,-50%);
+    }
+    section.baner .baner-wraper .dados-wraper{
+        text-align: center;
+        display: inline-block;
+        margin: 10px 50px;
+        
+    }
+    section.baner .dados-wraper img{
+        width: 50px;
+    }
+    
+    
+
+
 
     /* RODAPÉ DO SITE */
 footer{
