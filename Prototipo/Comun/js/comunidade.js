@@ -1,4 +1,22 @@
-   // ABRIR E FECHAR MENU
+
+
+//FUNÇÃO PARA FAZER LIGAÇÃO COM A PAGINA ADOTAR
+var adotar = document.getElementById('adotar')
+function QueroAdotar(){
+   window.location = '../../Adotar/html/adotar.php'
+}
+adotar.addEventListener('click', QueroAdotar)
+
+
+//FUNÇÃO PARA FAZER LIGAÇÃO COM A PAGINA DOAR
+var doar = document.getElementById('doar')
+function QueroDoar(){
+   window.location = '../../Doar/html/doar.html'
+}
+doar.addEventListener('click', QueroDoar)
+
+
+   //ABRIR E FECHAR MENU
 var menu = document.getElementById('menu')
 var nav = document.getElementById('nav-menu')
 menu.addEventListener('click', function(){

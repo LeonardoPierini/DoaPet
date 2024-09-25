@@ -98,7 +98,7 @@ header .mobile nav ul li a{
 .add-animal{
     max-width: 1200px;
     background-color: blue;
-    margin:  0 auto;
+    margin:  50px auto;
     border-radius: 25px;
     padding: 20px 2%;
 }
@@ -147,34 +147,6 @@ header .mobile nav ul li a{
    left: 15%;
    margin: 3vh auto;
   }
-
-
-
-  /*ESTILIZAÇÃO DO CAMPO DE ANIMAIS REGISTRADOS */
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    margin-bottom: 10px;
-  }
-  .animal-i{
-      max-width: 980px;
-      margin: 10vh auto;
-  }
-  .animal-i h1{
-      text-align: center;
-  }
-  .animal-i ul li{
-      display: inline-block;
-      background-color: #ea45b0;
-      padding: 15px 30px;
-      border-radius: 20px;
-      margin: 0 5%; 
-  }
- 
-  
-
 
   /*ESTILIZAÇÃO DO RODAPÉ */
 footer{

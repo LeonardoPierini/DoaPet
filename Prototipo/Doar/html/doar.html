@@ -22,7 +22,7 @@
                         <li><a href="../../Home/Html/index.html">Home</a></li>
                         <li><a href="../../Blog/html/blog.html">Blog</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
-                        <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
+                        <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>
                 </nav>
             </div><!--desktop-->
@@ -34,7 +34,7 @@
                         <li><a href="../../Home/Html/index.html">Home</a></li>
                         <li><a href="../../Blog/html/blog.html">Blog</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
-                        <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
+                        <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>
                 </nav>
             </div> <!--Mobile-->
@@ -45,30 +45,25 @@
 
     <section class="add-animal">
         <div id="animal-form" class="animal-form">  
-            <h1>Adicionar Animal</h1>
+            <h1>ADICIONAR PET</h1>
+            <form action="../php/doar.php" method="post">
     
-            <input type="text" id="nome" placeholder="Nome do Pet" required>
-            <input type="number" id="idade" placeholder="Idade do Pet (em anos)" required>
-            <input type="number" id="peso" placeholder="Peso do animal (em kg)">
+            <input type="text" id="nome" name="namepet" placeholder="Nome do Pet" required>
+            <input type="number" id="idade" name="agepet" placeholder="Idade do Pet (em anos)" required>
+            <input type="number" id="peso" name="pesopet" placeholder="Peso do Pet (em kg)">
+            <input type="number" id="contato" name="contato" placeholder="Numero de Telefone" required>
             
-            <select id="sexo">
+            <select id="sexo" name="sexo">
                 <option value="macho">Macho</option>
                 <option value="fêmea">Fêmea</option>
             </select>
     
-            <input type="file" id="imagem" accept="image/*">
-            <button onclick="addAnimal()">Adicionar</button>
+            <input type="file" id="imagem" accept="image/*" name="imagem">
+            <button>Adicionar</button>
+        </form>
         </div><!--animal-form-->
     </section><!--add-animal-->
     
-
-    <section class="animal-i">
-        <div id="lista-animais">
-            <h1>Meus Animais Registrados</h1>
-            <ul id="animais"></ul>
-        </div><!--lista-animais-->
-    </section><!--animal-1-->
-
     <footer>
         <div class="container">
             <div class="footer-single">

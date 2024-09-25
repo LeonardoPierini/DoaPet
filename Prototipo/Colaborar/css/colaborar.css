@@ -7,150 +7,42 @@
     height: 100%;
     font-family: "Montserrat", sans-serif;
   }
-  
-
-
-    /*CLASSES AUXILIARES */
-  .clear{
-    clear: both;
+  body{
+    background-color: #ccc;
   }
-  .w33{
-    float: left;
-    width: 33.3%;
-    display: inline-block;
-}
-.container{
-  max-width: 1480px;
-  width: 100%;
-  margin: 0 auto;
-  }
-
-
-
-  /* ESTILIZAÇÃO DO CABEÇALHO E MENU */
-  header{
-  padding:20px 2%;
-  }
-  header .logo img{
-  float: left;
-  width: 236px;
-  }
-  header .desktop nav{
-    float: right;
-  }
-  header .desktop nav ul{
-    list-style-type: none; 
-    position: relative;
-    right: 10%;
-  }
-  header .desktop nav ul li{
-    float: left;  
-  }
-  header .desktop nav ul li a{
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-    position: relative;
-    top: 20px;
-    padding: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 300;
-    color: #ea45b0;
-  }
-  header .desktop nav ul li:last-child a{
-    color: white;
-    padding: 20px;
-    background-color: #eb0099;
-    border-radius: 8px;
-  }
-  header .mobile > img{
-    float: right;
-    width: 40px;
-    display: none;
+  section.share{
     position: absolute;
-    top: 30px;
-    right: 30px;
-    cursor: pointer;
-}
-  header .mobile nav{
-    max-width: 520px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 2%;
-    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7%;
+    max-width: 600px;
+    background-color: #eb0099;
   }
-  header .mobile nav ul li{
-   list-style-type: none;
-   border: 2px solid rgb(61, 61, 61);
-   margin:  1px;
-   text-align: center;
+  section .share-single a img{
+    width: 80px;
+    margin: 100px 50px;
   }
-  header .mobile nav ul li a{
-    text-decoration: none;
-    font-size: 20px;
+
+
+
+      /* DESIGN RESPONSIVO */
+@media  screen and (max-width: 1100px){
+  section.share{
+    max-width: 400px;
   }
-  header .mobile .selec {
-    font-weight: bolder;
-    text-shadow: 1px 1px 20px rgb(248, 0, 174);
+  section .share-single a img{
+    width: 50px;
+    margin: 70px 30px;
   }
-    
-
-
-
-   
-
-
-  /*ESTILIZAÇÃO DO RODAPÉ*/
-footer{
-  background-color: #530c3c;
-  color: rgba(255, 255, 255, 0.823);
-  display: flex;
-  text-align: center;
-  padding: 10px 0 20px 0;
 }
-footer h2{
-  font-weight: normal;
-  padding: 20px 0;
+@media  screen and (max-width: 700px){
+  section.share{
+    max-width: 80%;
+  }
+  section .share-single a img{
+    width: 50px;
+    margin: 70px 30px;
+    display: block;
+  }
 }
-footer p{
-font-weight: lighter;
-color: rgba(255, 255, 255, 0.46);
-padding: 5px;
-}
-footer.footer-2{
-  background-color: #800559;
-  color: rgba(255, 255, 255, 0.823);
-  text-align: center;
-  padding: 10px 0;
-}
-footer.footer-2 h2{
-  font-weight: normal;
-  font-size: 19px;
-}
-
-
-
-
-  
-
-  /* RESPONSIVO DO SITE*/
-  @media  screen and (max-width: 850px){
-    header .logo{
-        display: inline-block;
-    }
-    header .logo img{
-        float: none;
-        display: flex;
-    }
-    header .desktop nav{
-        display: none;
-    }
-    header .mobile nav{
-        display: none;
-    }
-    header .mobile img{
-      display: block;
-    }
-}
-  
-  

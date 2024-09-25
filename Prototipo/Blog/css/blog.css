@@ -164,56 +164,11 @@ section.camp-text .container p{
 
 
 
-  /*GALERIA*/
-.gallery {
-    position: relative;
-    max-width: 500px;
-    margin: auto;
-    margin: 5% 0;
-  }
-  .slides {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    border-radius: 25px;
-  }
-  .slides img {
-    scroll-snap-align: start;
-    width: 100%;
-    height: auto;
-  }
-  .prev,
-  .next {
-    background-color: #eb0099;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 25px;
-    z-index: 1; 
-    border-radius: 20px;
-  }
-  .container-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.213);
-    padding: 20px;
-  }
-  .prev{
-    position: absolute;
-    left: 25%;
-  }
-  .next {
-    position: absolute;
-    right: 25%;
-  }
-
-
     /*ESTILIZAÇÃO DO CAMPO DE DUVIDAS E DESCRIÇÃO*/
   h1.duvida{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.213);
-    padding: 10px;
+    background-color: #ea45b0;
+    padding: 30px;
     color: white;
     text-shadow:  2px 2px black;
   }

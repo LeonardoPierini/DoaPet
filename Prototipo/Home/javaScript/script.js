@@ -1,7 +1,7 @@
 //FUNÇÃO PARA FAZER LIGAÇÃO COM A PAGINA ADOTAR
 var adotar = document.getElementById('adotar')
 function QueroAdotar(){
-   window.location = '../../Adotar/Html/adotar.html'
+   window.location = '../../Adotar/html/adotar.php'
 }
 adotar.addEventListener('click', QueroAdotar)
 

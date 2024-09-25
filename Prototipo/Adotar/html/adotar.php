@@ -23,7 +23,7 @@
                         <li><a href="../../Home/Html/index.html">Home</a></li>
                         <li><a href="../../Blog/html/blog.html">Blog</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
-                        <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
+                        <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>
                 </nav>
             </div><!--desktop-->
@@ -35,7 +35,7 @@
                         <li><a href="../../Home/Html/index.html">Home</a></li>
                         <li><a href="../../Blog/html/blog.html">Blog</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
-                        <li><a href="../../Colaborar/html/colaborar.html">Colaborar</a></li>
+                        <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>
                 </nav>
             </div> <!--Mobile-->
@@ -43,6 +43,10 @@
         </div><!--container-->
     </header>
 
+
+    <?php
+        include '../php/adotar.php';
+    ?>
 
     <footer>
         <div class="container">
