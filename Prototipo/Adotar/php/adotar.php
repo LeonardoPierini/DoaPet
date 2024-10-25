@@ -15,7 +15,7 @@
                 }
     
                // Consulta SQL para selecionar os dados
-                $sql = "SELECT nome, peso, idade, sexo, imagem, contato FROM pets";
+                $sql = "SELECT id, nome, peso, idade, sexo, imagem, contato FROM pets";
                 $result = $conn->query($sql);
 
 ?>
@@ -33,57 +33,105 @@
             border-collapse: collapse;
             margin: 8% 0;
         }
-        table, th, td {
-            border: 1px solid black;
+        h1{
+            text-align: center;
+            background-color:#3085FC;
+            color: white;
+            text-transform: uppercase;
+            padding: 20px;
+            text-shadow: 1px 1px 2px black;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        .container{
+            max-width: 80%;
         }
-        img {
-            width: 100px;
-            height: auto;
+        .animal-doacao{
+            width: 20%;
+            background-color: #EA45B0;
+            border-radius: 30px;
+            display: inline-block;
+            margin: 40px  30px;
+            text-align: center;
+        }
+        .animal-doacao img{
+           width: 200px;
+           margin: 15px 0px;
+           border-radius: 25px 25px 0 0;
+           height: 200px;
+           object-fit: cover;
+        }
+        .animal-doacao p{
+           color: white;
+           margin: 10px 20px;
+           font-weight: 900;
+           text-align: left;
+        }
+        strong{
+            color: black;
+        }
+        .final{
+            margin-bottom: 25px;
+        }
+        .animal-doacao h2{
+           color: white;
+           text-align: center;
+           margin: 10px 0;
+           text-shadow: 1px 1px 1px black;
+           text-transform: uppercase;
         }
     </style>
 </head>
 <body>
+    <h1>PET'S DISPONIVEIS</h1>
+    <?php
+if ($result->num_rows > 0) {
+    // Defina um array de caminhos de imagens
+    $imagens = [
+        '../Img/dog-1.jpg',
+        '../Img/salsicha.jpg',
+        '../Img/treme-treme.jpg',
+        '../Img/coelho-1.jpg',
+        '../Img/cat=1.jpg',
+        '../Img/dog-2.jpg',
+        '../Img/cat-2.jpg',
+        '../Img/caramelo.jpg',
+        '../Img/dog-3.jpg',
+        '../Img/cat-3.jpg',
+        
+    ];
 
-    <h1>Informações dos Usuários</h1>
+    // Índice para alternar entre as imagens
+    $indice_imagem = 0;
 
-    <table>
-        <thead>
-            <tr>
-                <th>Imagem</th>
-                <th>Nome</th>
-                <th>Peso</th>
-                <th>Idade</th>
-                <th>Sexo</th>
-                <th>contato</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
+    echo "<div class='container'>";
+    while($row = $result->fetch_assoc()) {
+        // Use a imagem do array
+        $imagem_exibida = $imagens[$indice_imagem];
 
-            if ($result->num_rows > 0) {
+        // Incrementa o índice para a próxima imagem
+        $indice_imagem++;
 
-                while($row = $result->fetch_assoc()) {
-                    echo "<tr>";
-                    echo "<td><img src='" . htmlspecialchars($row['imagem']) . "' alt='Imagem de " . htmlspecialchars($row['nome']) . "'></td>";
-                    echo "<td>" . htmlspecialchars($row['nome']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['peso']) . " kg</td>";
-                    echo "<td>" . htmlspecialchars($row['idade']) . " anos</td>";
-                    echo "<td>" . htmlspecialchars($row['sexo']) . "</td>";
-                    echo "<td>" . htmlspecialchars($row['contato']) . "</td>";
-                    echo "</tr>";
-                }
-            } else {
-                echo "<tr><td colspan='5'>Nenhum usuário encontrado</td></tr>";
-            }
+        // Reinicia o índice se atingir o fim do array de imagens
+        if ($indice_imagem >= count($imagens)) {
+            $indice_imagem = 0;
+        }
 
-            $conn->close();
-            ?>
-        </tbody>
-    </table>
+        echo "<div class='animal-doacao'>
+                <img src='".$imagem_exibida."'>
+                <h2>" . htmlspecialchars($row['nome']) . "</h2>
+                <p>PESO:  <strong>" . htmlspecialchars($row['peso']) . " kg</strong></p>
+                <p>IDADE:   <strong>" . htmlspecialchars($row['idade']) . " anos</strong></p>
+                <p>SEXO:   <strong>" . htmlspecialchars($row['sexo']) . "</strong></p>
+                <p class='final'>CONTATO:  <strong>" . htmlspecialchars($row['contato']) . "</strong></p>
+            </div>";
+    }
+    echo "</div>";
+} else {
+    echo "<p>Nenhum animal encontrado</p>";
+}
+
+$conn->close();
+?>
+
 
 </body>
 </html>

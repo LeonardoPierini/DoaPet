@@ -200,7 +200,7 @@ section.camp-img .img-pet img{
     text-align: center;
 }
 .line-div .line1,.line2{
-    width: 40%;
+    width: 30%;
     height: 6px;
     background-color: #eb0099;
     display: inline-block;
@@ -240,13 +240,15 @@ section.camp-img .img-pet img{
     section.baner .baner-wraper .dados-wraper{
         text-align: center;
         display: inline-block;
-        margin: 10px 50px;
-        
+        margin: 10px 50px;  
     }
     section.baner .dados-wraper img{
         width: 50px;
     }section.baner .dados-wraper p{
         width: 200px;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        text-shadow: 1px 1px 1px black;
     }
     
     
@@ -283,8 +285,9 @@ footer.footer-2 h2{
 
 
 
-
     /* DESIGN RESPONSIVO */
+
+
 @media  screen and (max-width: 850px){
     header .logo{
         display: inline-block;
@@ -301,6 +304,12 @@ footer.footer-2 h2{
     }
     header .mobile img{
         display: block;
+    }
+    .line-div .line1,.line2{
+        width: 25%;
+    }
+    section.baner .baner-wraper {
+       margin: -80px 70px;
     }
 }
 
@@ -324,6 +333,29 @@ footer.footer-2 h2{
         width: 100%;
         padding: 5px 10px;
     }
+    .line-div .line1,.line2{
+        width: 20%;
+    }
+    section.baner .baner-wraper{
+        margin: -20px 30px; 
+    }
+    section.baner .baner-wraper .dados-wraper{
+        margin: 10px 30px; 
+    }
+    section.baner .dados-wraper img{
+        width: 40px;
+    }section.baner .dados-wraper p{
+        width: 100px;
+        font-size: 12px;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+}
+@media  screen and (max-width: 500px){
+    section.baner .baner-wraper .dados-wraper{
+        display: none;
+    }
+    
 }
 
 

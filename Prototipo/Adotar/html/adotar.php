@@ -21,7 +21,7 @@
                 <nav>
                     <ul>
                         <li><a href="../../Home/Html/index.html">Home</a></li>
-                        <li><a href="../../Blog/html/blog.html">Blog</a></li>
+                        <li><a href="../../Blog/html/blog.html">FAQs</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
                         <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>
@@ -33,7 +33,7 @@
                 <nav id="nav-menu">
                     <ul>
                         <li><a href="../../Home/Html/index.html">Home</a></li>
-                        <li><a href="../../Blog/html/blog.html">Blog</a></li>
+                        <li><a href="../../Blog/html/blog.html">FAQs</a></li>
                         <li><a href="../../Comun/html/comunidade.html">Comunidade</a></li>
                         <li><a href="../../Colaborar/html/colaborar.html">Compartilhar</a></li>
                     </ul>

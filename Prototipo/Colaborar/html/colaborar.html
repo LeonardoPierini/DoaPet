@@ -10,15 +10,26 @@
     <link rel="stylesheet" href="../css/colaborar.css">
 </head>
 <body>
-
     <section class="share">
             <div class="share-single">
-                <a href=""><img src="../../Imgs/whatsapp.png" alt="whattsApp"></a>
-                <a href=""><img src="../../Imgs/facebook.png" alt="Instagram"></a>
-                <a href=""><img src="../../Imgs/link-quebrado.png" alt="CopiarLink"></a>
+                <a href="https://api.whatsapp.com/send?text=Confira%20meu%20site:%20SEU_LINK_AQUI" target="_blank"><img src="../../Imgs/whatsapp.png" alt="whattsApp"></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=SEU_LINK_AQUI" target="_blank"><img src="../../Imgs/facebook.png" alt="Instagram"></a>
+                <a href="#" onclick="copyCurrentURL()"><img src="../../Imgs/link-quebrado.png" alt="CopiarLink"></a>
             </div><!--share-single-->
     </section><!--Share-->
-
+    <p class="txt"><a href="../../Home/Html/index.html">Voltar a Pagina Inicial</a></p>
     <script src="../js/colaborar.js"></script>
+    <script>
+        function copyCurrentURL() {
+            var currentURL = window.location.href;
+            var tempInput = document.createElement("input");
+            tempInput.value = currentURL;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            alert("Link copiado: " + currentURL);
+        }
+        </script>
 </body>
 </html>
