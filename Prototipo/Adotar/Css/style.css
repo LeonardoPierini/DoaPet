@@ -5,7 +5,7 @@
   }
   html,body{
     height: 100%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "LXGW WenKai TC", cursive;
   }
   
 
@@ -23,6 +23,12 @@
   width: 100%;
   margin: 0 auto;
   }
+  .lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   
 
 
@@ -52,7 +58,7 @@
     position: relative;
     top: 20px;
     padding: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "LXGW WenKai TC", cursive;
     font-weight: 300;
     color: #ea45b0;
   }

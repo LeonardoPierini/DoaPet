@@ -6,7 +6,7 @@
 
 html,body{
     height: 100%;
-    font-family: "Montserrat", sans-serif;
+    font-family: "LXGW WenKai TC", cursive;
 }
     /* CLASSES AUXILIARES */
 .clear{
@@ -22,6 +22,11 @@ html,body{
 	width: 100%;
 	margin: 0 auto;
 }
+.lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
 
@@ -54,7 +59,7 @@ header .desktop nav ul li a{
     position: relative;
     top: 20px;
     padding: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "LXGW WenKai TC", cursive;
     font-weight: 300;
     color: #ea45b0;
 }
@@ -95,17 +100,12 @@ header .mobile .selec {
     font-weight: bolder;
     text-shadow: 1px 1px 20px rgb(248, 0, 174);
   }
-    
-
-
-
     /*ICONES E BOTÕES */
 section.camp-icon{
     background-color:#3085fc;
 }
 section.camp-icon .container{
    max-width: 830px;
-
 } 
 section.camp-icon .container .icones{
     padding: 20px 2%;
@@ -121,7 +121,7 @@ section.camp-icon .icon p{
    color: white;
    font-size: 13px;
    text-align: center;
-   font-family: "Montserrat", sans-serif;;
+   font-family: "LXGW WenKai TC", cursive;
    margin-top: 10px;
 } 
 section.camp-icon .icon img{
@@ -160,9 +160,6 @@ section.camp-text .container h1{
 section.camp-text .container p{
     font-weight: 500;
 }
-
-
-
     /* CAMPO DAS IMAGENS DOS PETS */
 section.camp-img{
     background-color: #ccc;
@@ -190,9 +187,6 @@ section.camp-img .img-pet img{
     object-fit: cover;
     border-radius: inherit;
 }
-
-
-
  /*Line division*/
 .line-div{
     background-color:#ccc ;
@@ -211,10 +205,7 @@ section.camp-img .img-pet img{
     background-color: #ccc;
     margin: 0 2%;
     
-}
-
-
-    /*Banner*/
+}/*Banner*/
     section.baner{
         height: 100%;
     }
@@ -249,13 +240,7 @@ section.camp-img .img-pet img{
         color: rgb(255, 255, 255);
         font-weight: 600;
         text-shadow: 1px 1px 1px black;
-    }
-    
-    
-
-
-
-    /* RODAPÉ DO SITE */
+    }/* RODAPÉ DO SITE */
 footer{
     background-color: #530c3c;
     color: rgba(255, 255, 255, 0.823);
@@ -281,13 +266,7 @@ footer.footer-2{
 footer.footer-2 h2{
     font-weight: normal;
     font-size: 19px;
-}
-
-
-
-    /* DESIGN RESPONSIVO */
-
-
+}/* DESIGN RESPONSIVO */
 @media  screen and (max-width: 850px){
     header .logo{
         display: inline-block;
@@ -311,9 +290,7 @@ footer.footer-2 h2{
     section.baner .baner-wraper {
        margin: -80px 70px;
     }
-}
-
-@media  screen and (max-width: 600px){
+}@media  screen and (max-width: 600px){
     section.camp-img .images-2{
     display: none;
     }
@@ -350,8 +327,7 @@ footer.footer-2 h2{
         margin-left: 20px;
         font-weight: 700;
     }
-}
-@media  screen and (max-width: 500px){
+}@media  screen and (max-width: 500px){
     section.baner .baner-wraper .dados-wraper{
         display: none;
     }

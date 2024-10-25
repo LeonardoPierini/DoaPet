@@ -9,8 +9,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-    font-family: Arial, sans-serif;
+    font-family: "LXGW WenKai TC", cursive;
   }
+  .lxgw-wenkai-tc-regular {
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
   h1{
     text-align: center;
     margin-top: 40px;
